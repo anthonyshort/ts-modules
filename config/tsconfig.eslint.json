@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    ".eslintrc.js",
+    "jest.base.config.js",
+    "./packages/*/jest.config.js",
+    "jest.dom-base.config.js",
+    "jest.node-base.config.js",
+    "jest.global-setup.js",
+    "jest.setup-after-env.js"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "react-provision",
+  "description": "Create and compose context-based services in your React apps.",
+  "license": "UNLICENSED",
+  "keywords": ["react", "provider", "context", "services"],
+  "version": "0.1.0",
+  "files": [
+    "dist/src"
+  ],
+  "main": "dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build-watch": "tsc -w",
+    "clean": "rm -rf dist",
+    "test": "jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonyshort/node-modules.git",
+    "directory": "packages/react-provision"
+  },
+  "dependencies": {
+    "is-promise": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
