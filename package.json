@@ -40,6 +40,8 @@
     "xo": "^0.37.1"
   },
   "scripts": {
+    "link": "lerna bootstrap",
+    "publish": "lerna publish",
     "build": "tsc -b",
     "clean": "lerna run clean",
     "test": "xo && lerna run test --stream -- --passWithNoTests",
