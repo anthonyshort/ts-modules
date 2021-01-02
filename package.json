@@ -41,7 +41,7 @@
   },
   "scripts": {
     "link": "lerna bootstrap",
-    "publish": "lerna publish",
+    "publish": "lerna publish from-package --yes --no-verify-access",
     "build": "tsc -b",
     "clean": "lerna run clean",
     "test": "xo && lerna run test --stream -- --passWithNoTests",
