@@ -1,5 +1,5 @@
 {
-  "name": "node-modules",
+  "name": "ts-modules",
   "workspaces": [
     "packages/*"
   ],
