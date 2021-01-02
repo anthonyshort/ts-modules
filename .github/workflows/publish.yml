@@ -5,7 +5,6 @@ on:
       - master
 
 env:
-  CI: true
   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
@@ -21,6 +20,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "15.x"
+          registry-url: https://registry.npmjs.org/
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
@@ -32,5 +32,4 @@ jobs:
         run: |
           yarn lerna publish from-package --yes
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
