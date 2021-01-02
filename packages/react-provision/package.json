@@ -1,10 +1,8 @@
 {
   "name": "react-provision",
   "description": "Create and compose context-based services in your React apps.",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "license": "UNLICENSED",
+  "homepage": "https://github.com/anthonyshort/node-modules/tree/master/packages/react-provision",
+  "license": "MIT",
   "keywords": [
     "react",
     "provider",
