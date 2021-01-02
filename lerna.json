@@ -1,6 +1,6 @@
 {
   "packages": [
-    "packages/*"
+    "packages/react-provider"
   ],
   "npmClient": "npm",
   "useWorkspaces": true,
