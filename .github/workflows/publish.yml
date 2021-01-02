@@ -1,11 +1,9 @@
 name: publish
+
 on:
   push:
     branches:
       - master
-
-env:
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   publish:
@@ -13,23 +11,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v2
 
       - name: Use Node 15.x
         uses: actions/setup-node@v1
         with:
           node-version: "15.x"
-          registry-url: https://registry.npmjs.org/
 
-      - name: Install deps and build (with cache)
+      - name: Install (with cache)
         uses: bahmutov/npm-install@v1
 
       - name: Build
         run: npm run build
 
       - name: Publish
-        run: yarn lerna publish from-package --yes
+        run: yarn lerna publish from-package --yes --no-verify-access
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
