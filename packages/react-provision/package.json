@@ -18,6 +18,7 @@
     "build": "tsc",
     "build-watch": "tsc -w",
     "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build",
     "test": "jest --passWithNoTests"
   },
   "repository": {
