@@ -1,10 +1,8 @@
 name: publish
 on:
-  # When a pull request into master is merged
-  pull_request:
+  push:
     branches:
       - master
-    types: [closed]
 
 env:
   CI: true
