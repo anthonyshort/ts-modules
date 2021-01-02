@@ -2,8 +2,13 @@
   "name": "react-provision",
   "description": "Create and compose context-based services in your React apps.",
   "license": "UNLICENSED",
-  "keywords": ["react", "provider", "context", "services"],
-  "version": "0.1.0",
+  "keywords": [
+    "react",
+    "provider",
+    "context",
+    "services"
+  ],
+  "version": "0.2.0",
   "files": [
     "dist/src"
   ],
