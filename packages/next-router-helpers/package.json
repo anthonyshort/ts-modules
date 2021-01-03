@@ -1,0 +1,35 @@
+{
+  "name": "next-router-helpers",
+  "description": "Wrapper around the Next.js router that allows for mocking and makes it easier to use routes with parameters.",
+  "homepage": "https://github.com/anthonyshort/node-modules/tree/master/packages/next-router-helpers",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "next.js",
+    "nextjs",
+    "router",
+    "route"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "dist/src"
+  ],
+  "main": "dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build-watch": "tsc -w",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build",
+    "test": "jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonyshort/node-modules.git",
+    "directory": "packages/next-router-helpers"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "next": "^9.5.4"
+  }
+}
